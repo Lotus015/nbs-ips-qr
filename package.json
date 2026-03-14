@@ -1,0 +1,58 @@
+{
+  "name": "nbs-ips-qr",
+  "version": "1.0.0",
+  "description": "NBS IPS QR code generator for Serbian payment system — TypeScript, server-safe, zero window dependencies",
+  "keywords": [
+    "nbs",
+    "ips",
+    "qr",
+    "qr-code",
+    "serbia",
+    "payment",
+    "invoice",
+    "faktura",
+    "uplatnica",
+    "iso-7064"
+  ],
+  "author": "Lotus015",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lotus015/nbs-ips-qr.git"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.6",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}
