@@ -2,6 +2,8 @@
 
 NBS IPS QR code generator for the Serbian payment system. TypeScript-first, server-safe, zero `window` dependencies.
 
+Built for [Fakturiši](https://fakturisi.rs) — invoicing platform for the Serbian market.
+
 Generate QR codes that Serbian banking apps can scan to auto-fill payment orders — the standard QR you see on every Serbian invoice.
 
 ## Features
